@@ -1,5 +1,5 @@
 // --- ALLY DATA ---
-//Any time we wish to add a new party member, Build it in the global.allies struct and then add a reference to it in the global.party array (over in GameData)
+//Any time we wish to add a new party member, Build it in the global.allies struct and then add a reference to it in the global.party array
 global.allies =
 {
 	player :
@@ -44,7 +44,12 @@ global.allies =
 		actions : [global.actionLibrary.attack, global.actionLibrary.ice, global.actionLibrary.fire, global.actionLibrary.buff, global.actionLibrary.debuff]
 	}
 }
-
+// --- THE PARTY ---
+global.party = 
+[
+	global.allies.player,
+	global.allies.sage
+]
 
 
 

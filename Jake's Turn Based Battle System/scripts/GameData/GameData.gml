@@ -20,12 +20,7 @@ global.levelManager =
 	levelUpXP : [0, 100, 200, 300, 400, 500, 600],
 }
 
-// --- THE PARTY ---
-global.party = 
-[
-	global.allies.player,
-	global.allies.sage
-]
+
 
 
 // --- ENUMS ---

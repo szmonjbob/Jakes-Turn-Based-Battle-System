@@ -76,7 +76,7 @@ victory_move_complete = false; // Tracks whether the movement performed in the v
 
 
 
-//STATE MACHINE GO!
+//STATE MACHINE:
 //The battle's turn system works through a cycle of states that determine the phase of each turn
 
 // --- BATTLE START STATES ---
@@ -611,6 +611,8 @@ victory_move_complete = false; // Tracks whether the movement performed in the v
 	// --- END OF ROUND ---  (Perform end of turn/round updates and move on to the next turn)
 	function BattleStateTurnProgression()
 	{
+		// reset battleText on the off chance it hasn't been already
+		battleText = "";
 		// Reset action stage so it can be used for the perform state on the next turn.
 		action_stage = 0;
 		// Set last round to equal the current round count as of the curren turn.
