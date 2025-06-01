@@ -1,11 +1,12 @@
 
 
 
-
+// Once the battle has been initialized, Draw the party portraits with healtbars and magic bars at the bottom of the screen.
 if battle_mode
 {
 	for (var i = 0; i < array_length(partyUnits); i++)
 	{
+		// This isn't super interesting, just a bunch of math to determine the size and spacing of UI elements. Mostly for easy implementation and tweaking.
 		var _margin = 3;
 		var _portrait_frame = 26;
 		var _HUD_portrait = (_portrait_frame - 4) / sprite_get_width(partyUnits[i].sprites.portrait);
