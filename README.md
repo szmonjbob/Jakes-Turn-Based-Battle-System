@@ -1,7 +1,7 @@
 # Jakes Turn Based Battle System
 A turn based battle system demo I made in GameMaker Studio.
 
-I made this project using the wonderful Sara Spaulding's [Turn Based Combat Tutorial](<>) as a base. That tutorial series remains incomplete as of the time of writing, lacking a number of features vital to the functioning of the system.
+I made this project using the wonderful Sara Spalding's [Turn Based Combat Tutorial](<https://www.youtube.com/playlist?list=PLPRT_JORnIurSiSB5r7UQAdzoEv-HF24L>) as a base. That tutorial series remains incomplete as of the time of writing, lacking a number of features vital to the functioning of the system.
 
 I began this project in november of 2024, inspired largely by my desire to better comprehend my complicated feelings towards the game Chained Echoes. I also have a number of game ideas that could use a system like this, so it seemed like a good idea to try my hand at learning the basics and seeing where I could take them. 
 
@@ -26,59 +26,60 @@ After getting the game into a relatively stable and playable state on my own, I 
 - A system for enemy weaknesses to attacks of certain types (Inspired by every JRPG under the sun).
 - A new battle state that allows the player to restart the battle from the beginning on a game over.
 - Movement states for battle units, allowing for melee actions to actually connect with their enemies.
-- A dynamic battle camera that follows units as they move across the screen.
+- A dynamic battle camera that follows units as they move across the battlefield.
 - Screen shake on attack impacts that gets more intense if the target is weak to the attack.
 - A rudimentary condition system.
 - Properly implemented controller support that adapts to controllers connecting and disconnecting (this is not native to GameMaker and had to be programmed manually).
   
 **CHANGES:**
 
-- Overhauled visuals (Purchased from the lovely penusbmic on itch.io)
-- Overhauled UI (Made with elements from penusbmic, as well as fonts from the users "neatthings" and "Daniel Linssen" on itch.io)
+- Overhauled visuals (Purchased from the lovely penusbmic on itch.io).
+- Overhauled UI (Made with elements from penusbmic, as well as fonts from the users "neatthings" and "Daniel Linssen" on itch.io).
 - New Enemies with improved AI.
 - New Actions and massive changes to the way actions are performed, allowing for actions that can hit multiple times.
 - Better transitions to entering the battle and exiting it.
-
+- Moved all draw functions for UI elements from the normal "Draw" events to the "Draw GUI" (In this repo Draw_64), which required a ton of adjustments. 
+ 
 
 
 ## To Review the Code:
 
 GameMaker handles the storage of files for its users, in a way that is (in my humble opinion), very hard to navigate.
 
-So in the interest of saving you the hassle, I'll point you to all of the important code.
+So in the interest of saving you the hassle, I'll point you to all of the important code, all of which is annotated.
 
 **OBJECT SCRIPTS**
 - [**oBattle's**](<>) Events:
-  - [Create](<>) -
-  - [Draw_64](<>) (Draw GUI):
-  - [Step](<>) -
+  - [Create](<>) - Holds all of the code for the battle manager's state machine, which is the fundamental core of the project.
+  - [Draw_64](<>) (Draw GUI) - Handles the drawing of the basic battle UI, including turn order portraits, and the UI for ally HP/MP containers.
+  - [Step](<>) - Handles targetting after selecting an action.
 - [**oBattleUnit's**](<>) Events:
-  - [Create](<>) -
+  - [Create](<>) - Handles a Unit's stats, as well as the unit's movement state machine.
 - [**oMenu's**](<>) Events:
-  - [Step](<>) -
-  - [Draw_64](<>) -
+  - [Step](<>) - Handles the selection of menu items.
+  - [Draw_64](<>) - Handles the drawing of the menu UI.
 - [**objBattleVictory's**](<>) Events:
-  - [Step](<>) -
-  - [Draw_64](<>) - 
+  - [Step](<>) - Lays out a sequence of code that triggers parts of the object's drawn elements at proper intervals.
+  - [Draw_64](<>) - Handles the drawing of the victory screen's UI.
 - [**objBattleGameOver's**](<>) Events:
-  - [Step](<>) - 
-  - [Draw_64](<>) - 
+  - [Step](<>) - Lays out a sequence of code that triggers parts of the object's drawn elements at proper intervals.
+  - [Draw_64](<>) - Handles the drawing of the Game Over sequence.
 - [**objCamera's**](<>) Events:
-  - [Create](<>) -
+  - [Create](<>) - Holds the state machine (camera_mode) used to determine the camera's activity.
 - [**objControls'**](<>) Events:
-  - [Step](<>) -
+  - [Step](<>) - Holds all of the input parsing code I wrote to universalize the demo's controls and add controller support.
 
 **GENRAL SCRIPTS**
-- [**ActionLibrary**](<>) -
-- [**Units**](<>) -
-- [**GameData**](<>) - 
-- [**Menu Functions**](<>) -
-- [**Battle Functions**](<>) - 
+- [**ActionLibrary**](<>) - Holds all of the actions usable in the game, with a glossary at the beginning
+- [**Units**](<>) - Holds all units (both allies and enemies), as well as the global.party array (which has to be established after the allies.)
+- [**GameData**](<>) - Holds several miscellaneous macros, enums and the level manager.
+- [**Menu Functions**](<>) - Holds all relevant menu functions (A list of those functions can be found at the beginning of the script.)
+- [**Battle Functions**](<>) - Holds a number of functions that are used during battles.
 
 
 ## Credits:
 
-- [**Sara Spaulding**](<>) - Creator of the Base Project and a couple of the art assets in the final build.
-- [**penusbmic**](<>) - Creator of nearly all of the art assets used in the final build.
-- [**neatthings**](<>) - Creator of the main font: "Spencer's Spooky Font"
-- [**Daniel Linssen**](<>) - Creator of the font "M3x6", which is used in some UI elements
+- [**Sara Spalding**](<https://www.youtube.com/@SaraSpalding>) - Creator of the Base Project and a couple of the art assets in the final build.
+- [**penusbmic**](<https://penusbmic.itch.io/>) - Creator of nearly all of the art assets used in the final build.
+- [**neatthings**](<https://neatthings.itch.io/>) - Creator of the main font: "Spencer's Spooky Font"
+- [**Daniel Linssen**](<https://managore.itch.io/>) - Creator of the font "M3x6", which is used in some UI elements
