@@ -10,8 +10,8 @@ After getting the game into a relatively stable and playable state on my own, I 
 
 ## Download Instructions:
 
-- To gain access to the Game Maker Project, simply download the [_"Jake's Turn Based Battle System"_](<>) Folder and import it into the engine.
-- To Download the demo and play it, download [_this_](<>) zipped folder and extract the files.
+- To gain access to the Game Maker Project, simply download the [_"Jake's Turn Based Battle System"_](<Jake's Turn Based Battle System>) Folder and import it into the engine.
+- To Download the demo and play it, download [_this_](<Jake's Turn Based Battle System (game demo).zip>) zipped folder and extract the files.
 
 
 
@@ -49,32 +49,33 @@ GameMaker handles the storage of files for its users, in a way that is (in my hu
 So in the interest of saving you the hassle, I'll point you to all of the important code, all of which is annotated.
 
 **OBJECT SCRIPTS**
-- [**oBattle's**](<>) Events:
-  - [Create](<>) - Holds all of the code for the battle manager's state machine, which is the fundamental core of the project.
-  - [Draw_64](<>) (Draw GUI) - Handles the drawing of the basic battle UI, including turn order portraits, and the UI for ally HP/MP containers.
-  - [Step](<>) - Handles targetting after selecting an action.
-- [**oBattleUnit's**](<>) Events:
-  - [Create](<>) - Handles a Unit's stats, as well as the unit's movement state machine.
-- [**oMenu's**](<>) Events:
-  - [Step](<>) - Handles the selection of menu items.
-  - [Draw_64](<>) - Handles the drawing of the menu UI.
-- [**objBattleVictory's**](<>) Events:
-  - [Step](<>) - Lays out a sequence of code that triggers parts of the object's drawn elements at proper intervals.
-  - [Draw_64](<>) - Handles the drawing of the victory screen's UI.
-- [**objBattleGameOver's**](<>) Events:
-  - [Step](<>) - Lays out a sequence of code that triggers parts of the object's drawn elements at proper intervals.
-  - [Draw_64](<>) - Handles the drawing of the Game Over sequence.
-- [**objCamera's**](<>) Events:
-  - [Create](<>) - Holds the state machine (camera_mode) used to determine the camera's activity.
-- [**objControls'**](<>) Events:
-  - [Step](<>) - Holds all of the input parsing code I wrote to universalize the demo's controls and add controller support.
+- [**oBattle's**](<Jake's Turn Based Battle System/objects/oBattle>) Events:
+  - [Create](<Jake's Turn Based Battle System/objects/oBattle/Create_0.gml>) - Holds all of the code for the battle manager's state machine, which is the fundamental core of the project.
+  - [Draw_64](<Jake's Turn Based Battle System/objects/oBattle/Draw_64.gml>) (Draw GUI) - Handles the drawing of the basic battle UI, including turn order portraits, and the UI for ally HP/MP containers.
+  - [Step](<Jake's Turn Based Battle System/objects/oBattle/Step_0.gml>) - Handles targetting after selecting an action.
+- [**oBattleUnit's**](<Jake's Turn Based Battle System/objects/oBattleUnit>) Events:
+  - [Create](<Jake's Turn Based Battle System/objects/oBattleUnit/Create_0.gml>) - Handles a Unit's stats, as well as the unit's movement state machine.
+- [**oMenu's**](<Jake's Turn Based Battle System/objects/oMenu>) Events:
+  - [Step](<Jake's Turn Based Battle System/objects/oMenu/Step_0.gml>) - Handles the selection of menu items.
+  - [Draw_64](<Jake's Turn Based Battle System/objects/oMenu/Draw_64.gml>) - Handles the drawing of the menu UI.
+- [**objBattleVictory's**](<Jake's Turn Based Battle System/objects/objBattleVictory>) Events:
+  - [Step](<Jake's Turn Based Battle System/objects/objBattleVictory/Step_0.gml>) - Lays out a sequence of code that triggers parts of the object's drawn elements at proper intervals.
+  - [Draw_64](<Jake's Turn Based Battle System/objects/objBattleVictory/Draw_64.gml>) - Handles the drawing of the victory screen's UI.
+- [**objBattleGameOver's**](<Jake's Turn Based Battle System/objects/objBattleGameOver>) Events:
+  - [Step](<Jake's Turn Based Battle System/objects/objBattleGameOver/Step_0.gml>) - Lays out a sequence of code that triggers parts of the object's drawn elements at proper intervals.
+  - [Draw_64](<Jake's Turn Based Battle System/objects/objBattleGameOver/Draw_64.gml>) - Handles the drawing of the Game Over sequence.
+- [**objCamera's**](<Jake's Turn Based Battle System/objects/objBattleCamera>) Events:
+  - [Create](<Jake's Turn Based Battle System/objects/objBattleCamera/Create_0.gml>) - Holds the state machine (camera_mode) used to determine the camera's activity.
+  - [Step](<Jake's Turn Based Battle System/objects/objBattleCamera/Step_0.gml>) - Handles the camera movement and screen shake.
+- [**objControls'**](<Jake's Turn Based Battle System/objects/objControls>) Events:
+  - [Step](<Jake's Turn Based Battle System/objects/objControls/Step_0.gml>) - Holds all of the input parsing code I wrote to universalize the demo's controls and add controller support.
 
 **GENRAL SCRIPTS**
-- [**ActionLibrary**](<>) - Holds all of the actions usable in the game, with a glossary at the beginning
-- [**Units**](<>) - Holds all units (both allies and enemies), as well as the global.party array (which has to be established after the allies.)
-- [**GameData**](<>) - Holds several miscellaneous macros, enums and the level manager.
-- [**Menu Functions**](<>) - Holds all relevant menu functions (A list of those functions can be found at the beginning of the script.)
-- [**Battle Functions**](<>) - Holds a number of functions that are used during battles.
+- [**ActionLibrary**](<Jake's Turn Based Battle System/scripts/ActionLibrary/ActionLibrary.gml>) - Holds all of the actions usable in the game, with a glossary at the beginning
+- [**Units**](<Jake's Turn Based Battle System/scripts/Units/Units.gml>) - Holds all units (both allies and enemies), as well as the global.party array (which has to be established after the allies.)
+- [**GameData**](<Jake's Turn Based Battle System/scripts/GameData/GameData.gml>) - Holds several miscellaneous macros, enums and the level manager.
+- [**Menu Functions**](<Jake's Turn Based Battle System/scripts/MenuFunctions/MenuFunctions.gml>) - Holds all relevant menu functions (A list of those functions can be found at the beginning of the script.)
+- [**Battle Functions**](<Jake's Turn Based Battle System/scripts/BattleFunctions/BattleFunctions.gml>) - Holds a number of functions that are used during battles.
 
 
 ## Credits:
