@@ -1,7 +1,6 @@
 // --- STUFF IN THIS SCRIPT ---
 // -- Macros
 // -- levelManager
-// -- party
 // -- Enums
 
 
