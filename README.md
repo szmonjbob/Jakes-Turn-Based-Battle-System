@@ -64,7 +64,7 @@ So in the interest of saving you the hassle, I'll point you to all of the import
 - [**objBattleGameOver's**](<Jake's Turn Based Battle System/objects/objBattleGameOver>) Events:
   - [Step](<Jake's Turn Based Battle System/objects/objBattleGameOver/Step_0.gml>) - Lays out a sequence of code that triggers parts of the object's drawn elements at proper intervals.
   - [Draw_64](<Jake's Turn Based Battle System/objects/objBattleGameOver/Draw_64.gml>) - Handles the drawing of the Game Over sequence.
-- [**objCamera's**](<Jake's Turn Based Battle System/objects/objBattleCamera>) Events:
+- [**objBattleCamera's**](<Jake's Turn Based Battle System/objects/objBattleCamera>) Events:
   - [Create](<Jake's Turn Based Battle System/objects/objBattleCamera/Create_0.gml>) - Holds the state machine (camera_mode) used to determine the camera's activity.
   - [Step](<Jake's Turn Based Battle System/objects/objBattleCamera/Step_0.gml>) - Handles the camera movement and screen shake.
 - [**objControls'**](<Jake's Turn Based Battle System/objects/objControls>) Events:
