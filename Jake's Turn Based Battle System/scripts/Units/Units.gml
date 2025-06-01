@@ -1,5 +1,5 @@
 // --- ALLY DATA ---
-//Any time we wish to add a new party member, Build it in the global.allies struct and then add a reference to it in the global.party array
+//Any time we wish to add a new party member, Build it in the global.allies struct and then add a reference to it in the global.party array (directly below the global.allies struct in this script)
 global.allies =
 {
 	player :
