@@ -27,15 +27,16 @@ else
 	if (lerpProgress == 1) 
 	{
 		game_over_stage = 2;
+		// In order to not create a new menu every frame, check to see if one already exists before making one.
 		if (!instance_exists(oMenu))
 		{
-			//I think there is an issue with the code that is causing the menu to draw itself a billion times. Try to sort that out.
+			
 			Menu(
 				(camera_get_view_width(view_camera[0])/2) - 50, 
 				120, 
 				[
 					{
-						//Retry Battle: Restart battle from beginning and try again. Will need a way to reset hp and mp
+						//Retry Battle: Restart battle from beginning and try again. (Reset battle defaults and set oBattle to BattleStateInit)
 						name: "Restart Battle", 
 						func: function() { reset_battle(); },
 						args: -1,
