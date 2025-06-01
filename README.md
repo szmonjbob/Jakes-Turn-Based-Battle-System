@@ -5,7 +5,7 @@ I made this project using the wonderful Sara Spalding's [Turn Based Combat Tutor
 
 I began this project in november of 2024, inspired largely by my desire to better comprehend my complicated feelings towards the game Chained Echoes. I also have a number of game ideas that could use a system like this, so it seemed like a good idea to try my hand at learning the basics and seeing where I could take them. 
 
-After getting the game into a relatively stable and playable state on my own, I took a couple months away from working in game maker to learn the Godot and Unity engines. During this time my programming abilities vastly improved, so I decided to return to the project to take a crack at making the combat feeling much better. I proceeded make some pretty substantial changes to core elements of the system, as well as completely overhauling the look of the system. The base of the project is still fundamentally similar, but there are very few parts of the project that don't have my fingerprints.
+After getting the game into a relatively stable and playable state on my own, I took a couple months away from working in game maker to learn the Godot and Unity engines. During this time my programming abilities vastly improved, so I decided to return to the project to take a crack at making the combat feel much better. I proceeded make some pretty substantial changes to core elements of the system, as well as completely overhauling the look of the system. The base of the project is still fundamentally similar, but there are very few parts of the project that don't have my fingerprints.
 
 
 ## Download Instructions:
