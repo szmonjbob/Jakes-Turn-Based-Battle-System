@@ -1,0 +1,37 @@
+Things to do for the turn-based battle system:
+
+
+
+
+
+if I have time:
+- chnage the way oBattleFloatingText looks and works
+- make the target offset half the sprite length
+
+
+- Add new party member
+- take a look at what makes the camera a bit janky when party units return to their anchors.
+- Add new actions - specifically the combo move.
+
+- Add new conditions
+- Add healthbar lerping for damage in the damage function (this is just fun)
+- Add new movement scripts and have a creature's preferred movement type accessed in its data.
+
+
+
+
+things I fixed:
+- fix camera movement to make it less janky
+- establish proper sequencing for jumping, i.e. fix any bugs relating to targeting multiple creatures and make sure ranged attacks are working as intended.
+- fix battle UI/ make the UI just generally better. Fix oMenu. It looks bad now. (FIXED)
+- set up proper UI displays for party members (DONE)
+- FIX POPUP HEALTH BARS (fixed)
+- Add controller support. (done thoroughly, detects controller type and reacts to controllers being connected and disconnected)
+- Make the victory screen look not like shit. NEEDS OVERHAUL - BADLY.
+	- Better animations
+	- Move to Draw GUI - god please.
+- MAKE GAME OVER TITLE HAVE A BETTER ENTRANCE (fade in, 
+- Add buffers to the end of the animation stages in both battle end-screens.
+- swap out art assets, set broadcast queues for attack animations (done? double check.)
+- SWAP OUT FX, TOTALLY FORGOT TO DO THAT!
+

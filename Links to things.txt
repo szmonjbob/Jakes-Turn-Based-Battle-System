@@ -1,0 +1,31 @@
+Links to things:
+
+TURN BASED BATTLE SYSTEM:
+
+- The Base of the project was made by Sara Spaulding as shown in her Turn Based Battle tutorial
+	https://www.youtube.com/playlist?list=PLPRT_JORnIurSiSB5r7UQAdzoEv-HF24L
+
+- Art Assets were created by penusbmic on itch.io
+	https://penusbmic.itch.io/
+
+
+- Main Font: Fonts 'n Goblins "Spencer's Spooky Font" by user neatthings on itch.io
+	https://neatthings.itch.io/
+- The fonts "m3x6" and "m5x7" are made by Daniel Linssen / @managore and shared under the CC0 v1.0 license.
+	https://managore.itch.io/
+
+
+- RELEVANT/ IMPORTANT OBJECTS TO TAKE A LOOK AT (this is for the README on git)
+	- SCRIPTS:
+		- GameData
+		- ActionLibrary
+		- Units
+		- BattleFunctions
+		- 
+
+
+code to reannotate:
+
+
+
+FIX THE TURN BASED GITHUB READ ME, YOUR DUMB ASS OVERWROTE IT!!!!!!!!
